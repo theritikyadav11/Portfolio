@@ -27,75 +27,75 @@ import axios from "axios";
 import { Bounce, toast } from "react-toastify";
 
 const Header = () => {
-  const [isLiked, setIsLiked] = useState(false);
-  const [likes, setLikes] = useState(0);
+  // const [isLiked, setIsLiked] = useState(false);
+  // const [likes, setLikes] = useState(0);
 
-  useEffect(() => {
-    const checkLike = async () => {
-      try {
-        const response = await axios.get(
-          `https://portfolio-server-jyzo.onrender.com/is-liked`
-        );
-        console.log(response.data);
-        setIsLiked(response.data.isLiked);
-      } catch (error) {
-        console.error("Error posting like:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const checkLike = async () => {
+  //     try {
+  //       const response = await axios.get(
+  //         `https://portfolio-server-jyzo.onrender.com/is-liked`
+  //       );
+  //       console.log(response.data);
+  //       setIsLiked(response.data.isLiked);
+  //     } catch (error) {
+  //       console.error("Error posting like:", error);
+  //     }
+  //   };
 
-    checkLike();
-  }, [isLiked]);
+  //   checkLike();
+  // }, [isLiked]);
 
-  const postLike = async () => {
-    try {
-      const response = await axios.get(
-        `https://portfolio-server-jyzo.onrender.com/like`
-      );
-      setIsLiked(true);
-      setLikes(response.data.likes);
-      toast.success(response.data.message, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-        transition: Bounce,
-      });
-    } catch (error) {
-      console.error("Error posting like:", error);
-    }
-  };
+  // const postLike = async () => {
+  //   try {
+  //     const response = await axios.get(
+  //       `https://portfolio-server-jyzo.onrender.com/like`
+  //     );
+  //     setIsLiked(true);
+  //     setLikes(response.data.likes);
+  //     toast.success(response.data.message, {
+  //       position: "top-right",
+  //       autoClose: 5000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "dark",
+  //       transition: Bounce,
+  //     });
+  //   } catch (error) {
+  //     console.error("Error posting like:", error);
+  //   }
+  // };
 
-  const postDislike = async () => {
-    try {
-      const response = await axios.get(
-        `https://portfolio-server-jyzo.onrender.com/dislike`
-      );
-      setIsLiked(false);
-      setLikes(response.data.likes);
-      toast.error(response.data.message, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-        transition: Bounce,
-      });
-    } catch (error) {
-      console.error("Error posting dislike:", error);
-    }
-  };
+  // const postDislike = async () => {
+  //   try {
+  //     const response = await axios.get(
+  //       `https://portfolio-server-jyzo.onrender.com/dislike`
+  //     );
+  //     setIsLiked(false);
+  //     setLikes(response.data.likes);
+  //     toast.error(response.data.message, {
+  //       position: "top-right",
+  //       autoClose: 5000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "dark",
+  //       transition: Bounce,
+  //     });
+  //   } catch (error) {
+  //     console.error("Error posting dislike:", error);
+  //   }
+  // };
 
-  const handleLikeAndDislike = (isLiked) => {
-    if (isLiked) postDislike();
-    else postLike();
-  };
+  // const handleLikeAndDislike = (isLiked) => {
+  //   if (isLiked) postDislike();
+  //   else postLike();
+  // };
 
   return (
     <TransitionWrapper>
@@ -114,7 +114,7 @@ const Header = () => {
           </HStack>
         </Link>
         <HStack display={["none", "flex", "flex", "flex"]} gap={2}>
-          <Button
+          {/* <Button
             onClick={() => handleLikeAndDislike(isLiked)}
             variant={""}
             size={["xs", "sm", "sm", "sm"]}
@@ -129,7 +129,7 @@ const Header = () => {
               </Box>
               <Text>{likes}</Text>
             </HStack>
-          </Button>
+          </Button> */}
           <Link to="mailto:dev.arvindofficial@gmail.com" target="_blank">
             <Button
               background="purple.100"
@@ -149,7 +149,7 @@ const Header = () => {
         </HStack>
 
         <HStack display={["flex", "none", "none", "none"]} gap={1}>
-          <Button
+          {/* <Button
             onClick={() => handleLikeAndDislike(isLiked)}
             variant={""}
             size={["xs", "sm", "sm", "sm"]}
@@ -170,7 +170,7 @@ const Header = () => {
               </Box>
               <Text>{likes}</Text>
             </HStack>
-          </Button>
+          </Button> */}
           <Menu>
             <MenuButton
               right={2}

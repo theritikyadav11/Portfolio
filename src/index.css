@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+/* accent: 5d5dff */
+
+html,
+body,
+#root {
+    height: 100%;
+    background-color: #151719;
+    color: white;
+    font-family: Inter, sans-serif;
+}
+
+::selection{
+    background-color: #5f5dff;
+    color: white;
+}
+
+.sidebar_links{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: white;
+        padding-left: 5px;
+    }
+}
+
+[role=tab]{
+    font-size: 0.8rem !important;
+    color: rgb(255, 255, 255) !important;
+    margin: 0px 2px !important;
+    transition: all 0.3s ease-in-out !important;
+}
+[role=tab]:hover{
+    color: white !important;
+    background-color: rgb(61, 61, 61);
+}
+
+[aria-selected=true]{
+    color: white !important;
+    background-color: #5f5dff !important;
+}
+
+.chakra-tabs__tablist{
+    overflow-x: auto !important;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(54, 54, 54);
+}
+.chakra-tabs__tablist::-webkit-scrollbar{
+    display: none !important;
+}
+.chakra-tabs__tab{
+    width: fit-content !important;
+    border-radius: 5px !important;
+}
+[role=tabpanel]{
+    padding: 8px !important
+}
+
+/* custom scrollbar  */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #151719;
+}
+::-webkit-scrollbar-thumb {
+    background: #5f5dff;
+}
+
+.tabmenu::-webkit-scrollbar{
+    height: 4px !important;
+}
+.tabmenu::-webkit-scrollbar-thumb{
+    background: #25282c;
+    border-radius: 10px;
+}
+
+.highlight{
+    font-weight: 600;
+    text-decoration: underline; 
+}
+.highlight-code{
+    font-weight: 600;
+    color: orange;
+}
+.highlight-code:hover{
+    text-decoration: underline; 
+}

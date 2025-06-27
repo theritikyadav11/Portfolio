@@ -114,7 +114,7 @@ const Header = () => {
           </HStack>
         </Link>
         <HStack display={["none", "flex", "flex", "flex"]} gap={2}>
-          <Button
+          {/* <Button
             onClick={() => handleLikeAndDislike(isLiked)}
             variant={""}
             size={["xs", "sm", "sm", "sm"]}
@@ -129,7 +129,7 @@ const Header = () => {
               </Box>
               <Text>{likes}</Text>
             </HStack>
-          </Button>
+          </Button> */}
           <Link to="mailto:dev.arvindofficial@gmail.com" target="_blank">
             <Button
               background="purple.100"

@@ -223,7 +223,7 @@ const Sidebar = () => {
                 color={"gray"}
               >
                 <BsGlobe size={18} />
-                <Link to={"https://arvindkumar.vercel.app"} target="_blank">
+                <Link to={"https://portfolio-47oy.vercel.app/"} target="_blank">
                   arvindkumar.vercel.app
                 </Link>
               </HStack>

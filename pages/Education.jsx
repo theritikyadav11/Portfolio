@@ -18,7 +18,7 @@ const educations = [
     date: "2024-2026",
     title: "Master in Computer Application",
     description: `from Vellore Institute of Technology, Vellore, Tamil Nadu`,
-    score: "9.29 CGPA",
+    score: "8.99 CGPA",
   },
   {
     id: 2,
@@ -33,6 +33,13 @@ const educations = [
     title: "Higher Secondary School",
     description: `From Basant College, Basant, Bihar BSEB Borad`,
     score: "76.2%",
+  },
+  {
+    id: 4,
+    date: "2017",
+    title: "Matriculation",
+    description: "Ishwari High School, Basant, Bihar BSEB Board",
+    score: "71.2%",
   },
 ];
 

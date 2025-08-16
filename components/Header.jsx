@@ -130,17 +130,21 @@ const Header = () => {
               <Text>{likes}</Text>
             </HStack>
           </Button> */}
-          <Link to="mailto:dev.arvindofficial@gmail.com" target="_blank">
+          <a
+            href="mailto:dev.arvindofficial@gmail.com?subject=Hiring%20Inquiry&body=Hello%20Arvind,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20opportunity%20with%20you."
+            rel="noopener noreferrer"
+          >
             <Button
               background="purple.100"
-              color={"white"}
+              color="white"
               size={["xs", "sm", "sm", "sm"]}
               _hover={{ backgroundColor: "purple.200" }}
               gap={2}
             >
               Hire Me <TbBriefcaseFilled />
             </Button>
-          </Link>
+          </a>
+
           <Text as={"a"} href={resume} type="image/pdf">
             <Button size={["xs", "sm", "sm", "sm"]} gap={1}>
               Resume <IoDocument />

@@ -115,7 +115,7 @@ const Coding_Profiles = () => {
                   Consistently coding from last{" "}
                   <span className="highlight">
                     {Math.floor(
-                      (new Date() - new Date("2024-11-25")) /
+                      (new Date() - new Date("2025-05-25")) /
                         (1000 * 60 * 60 * 24)
                     )}
                     🔥
@@ -124,18 +124,18 @@ const Coding_Profiles = () => {
                   <span className="highlight-code">
                     <Link
                       target="_blank"
-                      to={"https://github.com/theritikyadav11"}
+                      to={"https://leetcode.com/u/ArvindKumar11/"}
                     >
                       View here
                     </Link>
                   </span>{" "}
                 </ListItem>
                 <ListItem>
-                  Solved <span className="highlight">200+</span> Coding
+                  Solved <span className="highlight">350+</span> Coding
                   Interview DSA Problems across all the platforms.
                 </ListItem>
                 <ListItem>
-                  Solved <span className="highlight">150+</span> problems on{" "}
+                  Solved <span className="highlight">75+</span> problems on{" "}
                   <span className="highlight-code">
                     <Link
                       target="_blank"

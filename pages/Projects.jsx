@@ -21,6 +21,8 @@ import TransitionWrapper from "../components/Transition";
 
 import wonderlust from "../src/assets/projects/wonderlust.png";
 import fabric from "../src/assets/projects/fabric.png";
+import voiceIQ from "../src/assets/projects/voiceIQ.png";
+import tarkVitark from "../src/assets/projects/tarkVitark.png";
 
 const Projects = () => {
   const projectsList = [
@@ -41,6 +43,31 @@ const Projects = () => {
       techStack: ["Bootstrap", "EJS", "Express.js", "Node.js", "MongoDB"],
       url: "https://github.com/theritikyadav11/WonderLust",
       live: "https://github.com/theritikyadav11/WonderLust",
+    },
+    {
+      title: "VoiceIQ - An AI Powered Voice Agent",
+      description:
+        "Developed an AI-powered Voice Agent with FastAPI backend and React frontend that captures user speech, processes it using AssemblyAI and Google Gemini, and delivers natural-sounding responses via Murf AI.",
+      cover: voiceIQ,
+      techStack: [
+        "React",
+        "TailwindCSS",
+        "FastAPI",
+        "Gemini",
+        "AssemblyAI",
+        "Murf AI",
+      ],
+      url: "https://github.com/theritikyadav11/Voice_Agent",
+      live: "https://github.com/theritikyadav11/Voice_Agent",
+    },
+    {
+      title: "Tark Vitark Global",
+      description:
+        "Tark Vitark Global is a platform dedicated to reviving and modernizing India’s timeless traditions of philosophical debate—particularly the Purva Paksha–Uttara Paksha methodology—and integrating them into modern education.",
+      cover: tarkVitark,
+      techStack: ["React", "TailwindCSS", "Framer Motion"],
+      url: "https://github.com/theritikyadav11/Tark-Vitark",
+      live: "https://tarkvitarkglobal.com/",
     },
   ];
 

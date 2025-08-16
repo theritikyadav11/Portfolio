@@ -161,11 +161,8 @@ const Sidebar = () => {
                 color={"gray"}
               >
                 <AiOutlineMail size={18} />
-                <Link
-                  to={"mailto:dev.arvindofficial@gmail.com"}
-                  target="_blank"
-                >
-                  dev.arvindofficial@gmail.com
+                <Link to={"mailto:iamfighter267@gmail.com"} target="_blank">
+                  iamfighter267@gmail.com
                 </Link>
               </HStack>
             </TransitionWrapper>
